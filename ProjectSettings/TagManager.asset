@@ -14,9 +14,9 @@ TagManager:
   - 
   - 
   - wall
-  - 
-  - 
-  - 
+  - floor
+  - ceil
+  - ceil-floor
   - 
   - 
   - 

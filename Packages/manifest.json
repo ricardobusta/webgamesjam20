@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.demigiant.dotween": "1.2.32",
     "com.dbrizov.naughtyattributes": "https://github.com/dbrizov/NaughtyAttributes.git#upm",
     "com.unity.2d.animation": "3.2.2",
     "com.unity.2d.pixel-perfect": "2.0.4",
@@ -51,5 +52,16 @@
       "revision": "upm",
       "hash": "8361c4c50a4f375cfac3cdb67ebd3babf15c42d8"
     }
-  }
+  },
+  "scopedRegistries": [
+    {
+      "name": "package.openupm.com",
+      "url": "https://package.openupm.com",
+      "scopes": [
+        "com.dbrizov.naughtyattributes",
+        "com.demigiant.dotween",
+        "com.openupm"
+      ]
+    }
+  ]
 }

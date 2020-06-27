@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.Serialization;
 
 namespace BustaGames.Climber
@@ -6,10 +7,13 @@ namespace BustaGames.Climber
     public class GameController : MonoBehaviour
     {
         public PlayerController playerController;
+
+        private bool _jumpInput;
         
-        private void FixedUpdate()
+        private void Update()
         {
-            playerController.HandleFixedUpdate(Time.fixedDeltaTime);
+            _jumpInput = Input.GetAxis("Vertical") > 0;
+            playerController.HandleUpdate(Time.deltaTime, _jumpInput);
         }
     }
 }
